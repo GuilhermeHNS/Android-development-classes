@@ -21,17 +21,18 @@ public class MainActivity extends AppCompatActivity {
         EditText txtPeso = findViewById(R.id.txtPeso);
 
         double peso = Double.parseDouble(txtPeso.getText().toString());
-        int altura = Integer.parseInt(txtALtura.getText().toString());
+        double altura = Double.parseDouble(txtALtura.getText().toString());
         double imc = peso / Math.pow(altura, 2);
 
+
         if(imc < 17){
-            Toast.makeText(this, "Teste", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Magrão", Toast.LENGTH_LONG).show();
         }
-        else if(imc > 24){
-            Toast.makeText(this, "Teste", Toast.LENGTH_LONG).show();
+        else if(imc > 32){
+            Toast.makeText(this, "Gordão", Toast.LENGTH_LONG).show();
         }
         else{
-            Toast.makeText(this, "Teste", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Suavão", Toast.LENGTH_LONG).show();
         }
     }
 
