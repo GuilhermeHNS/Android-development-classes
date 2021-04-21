@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="263dp"
+        android:layout_height="244dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logosplash" />
+
+    <Button
+        android:id="@+id/b1Jogador"
+        android:layout_width="152dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="56dp"
+        android:onClick="onClick"
+        android:text="1 jogador"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/b2Jogador"
+        android:layout_width="152dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="24dp"
+        android:onClick="onClick"
+        android:text="2 jogador"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b1Jogador" />
+
+    <Button
+        android:id="@+id/bSair"
+        android:layout_width="152dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#EA03FB"
+        android:onClick="onClick"
+        android:text="Sair"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b2Jogador" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bSair"
+        app:srcCompat="@drawable/config" />
+</androidx.constraintlayout.widget.ConstraintLayout>
